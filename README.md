@@ -11,22 +11,24 @@
 Per avviare tutti i servizi (Django, PostgreSQL, Redis, Celery):
 
 ```bash
-docker-compose build
+docker-compose up --build
 ```
 
-dopo bisogna creare  l'utente per la JWT
+dopo bisogna creare l'utente per la JWT
+- aprire un altro terminale o terminare l'esecuzione del docker-compose
 
 ```bash
 docker-compose run --rm web sh -c "python manage.py createsuperuser"
 ```
- e infine bisogna avvia il progetto
 
- ```bash
- docker-compose up
- ```
+### Sole se avete terminato l'esecuzione di docker-compose
+Dopo aver creato l'utente bisogna ri-startare il docker-compose
+```bash
+docker-compose up
+```
 
 # Accesso all'API
-L'API REST è disponibile all'indirizzo 
+L'API REST è disponibile all'indirizzo code .
 
 ```bash
 http://127.0.0.1:8000/api/docs
@@ -49,7 +51,8 @@ Could not import 'candidate.grpc.service.grpc_handlers' for GRPC setting 'ROOT_H
 
 All'interno del progetto c'è un file python chiamato example_usage.py, 
 è possibile eseguire il file per effettare i vari test delle api e verificarne il funzionamente.
-
+- prima di lanciare il comando ricordatevi di aggiornare le credenziali con il superuser che avete creato
+  
 ```bash
 py example_usage.py
 ```
