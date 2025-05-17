@@ -15,7 +15,7 @@ docker-compose up --build
 ```
 
 dopo bisogna creare l'utente per la JWT
-- aprire un altro terminale o terminare l'esecuzione del docker-compose
+- aprire un altro terminale o terminate l'esecuzione
 
 ```bash
 docker-compose run --rm web sh -c "python manage.py createsuperuser"
