@@ -11,13 +11,19 @@
 Per avviare tutti i servizi (Django, PostgreSQL, Redis, Celery):
 
 ```bash
-docker-compose up --build
+docker-compose build
 ```
 
-## Creazione utente per la JWT
+dopo bisogna creare  l'utente per la JWT
+
 ```bash
 docker-compose run --rm web sh -c "python manage.py createsuperuser"
 ```
+ e infine bisogna avvia il progetto
+
+ ```bash
+ docker-compose up
+ ```
 
 # Accesso all'API
 L'API REST è disponibile all'indirizzo 
