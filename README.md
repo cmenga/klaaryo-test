@@ -35,7 +35,7 @@ L'API REST è disponibile all'indirizzo code .
 http://127.0.0.1:8000/api/docs
 ```
 
-Qui puoi vedere tutte le api tramite la dcuemntazione interattiva di Swagger/OpenAPI, per testare le singole chiamate.
+Qui puoi vedere tutte le api tramite la documentazione interattiva di Swagger/OpenAPI, per testare le singole chiamate.
 
 
 # Note importanti
