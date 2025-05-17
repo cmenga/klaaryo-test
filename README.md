@@ -47,7 +47,7 @@ Could not import 'candidate.grpc.service.grpc_handlers' for GRPC setting 'ROOT_H
 
 # Esempio di utilizzo
 
-All'interno del rpgetto c'è un file python chiamato example_usage.py. 
+All'interno del progetto c'è un file python chiamato example_usage.py, 
 è possibile eseguire il file per effettare i vari test delle api e verificarne il funzionamente.
 
 ```bash
