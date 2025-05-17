@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package candidate;
+
+service CandidateStatusService {
+  rpc GetCandidateStatus (CandidateIdRequest) returns (CandidateStatusResponse);
+}
+
+message CandidateIdRequest {
+  string id = 1;
+}
+
+message CandidateStatusResponse {
+  string status = 1;
+  string screening_log = 2; // stringified JSON
+}
