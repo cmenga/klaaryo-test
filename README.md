@@ -21,11 +21,12 @@ dopo bisogna creare l'utente per la JWT
 docker-compose run --rm web sh -c "python manage.py createsuperuser"
 ```
 
-### Sole se avete terminato l'esecuzione di docker-compose
-Dopo aver creato l'utente bisogna ri-startare il docker-compose
+### Solo se avete terminato l'esecuzione di docker-compose
+Se dopo aver creato il superuser hai terminato l’esecuzione di docker-compose up --build (es. perché hai usato docker-compose run per creare l’utente o hai fermato i container), dovrai rilanciare l’ambiente con:
 ```bash
 docker-compose up
 ```
+per riavviare tutti i servizi (web, db, redis, celery) e far partire l’app.
 
 # Accesso all'API
 L'API REST è disponibile all'indirizzo code .
